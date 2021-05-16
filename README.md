@@ -7,12 +7,12 @@ its proof of work (POW). Taking development cues from Tenebrix and Litecoin,
 RGNCoin currently employs a simplified variant of scrypt.
 - **Website:** [recallgavinnewsomcoin.com.](https://recallgavinnewsomcoin.com)
 
-## License – Much license ⚖️
+## License 
 RGNCoin Core is released under the terms of the MIT license. See
 [COPYING](COPYING) for more information or see
 [opensource.org](https://opensource.org/licenses/MIT)
 
-## Development and contributions – omg developers
+## Development and contributions
 Development is ongoing, and the development team, as well as other volunteers,
 can freely work in their own trees and submit pull requests when features or
 bug fixes are ready.
@@ -32,7 +32,7 @@ There are 3 types of branches in this repository:
 *submitted against those. Maintenance branches are there for **bug fixes only,***
 *please submit new features against the development branch with the highest version.*
 
-#### Contributions ✍️
+#### Contributions
 
 Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
 submit new unit tests for old code. Unit tests can be compiled and run
@@ -48,7 +48,7 @@ code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
 
-## Very Much Frequently Asked Questions ❓
+## Frequently Asked Questions
 
 ### How much RGNC can exist?
 Early 2015 (approximately a year and a half after release) there will be
@@ -58,7 +58,7 @@ secure the network and make up for lost wallets on hard drives/phones/lost
 encryption passwords/etc.
 
 
-### Mining information ⛏
+### Mining information
 
 RGNCoin uses a simplified variant of the scrypt key derivation function as its
 proof of work with a target time of one minute per block and difficulty
@@ -119,7 +119,7 @@ lessen the impact of sudden increases and decreases of network hashing rate.
   - [Unix Build Notes](doc/build-unix.md)
   - [Windows Build Notes](doc/build-windows.md)
 
-### Such ports
+### ports
 
 - RPC 22555
 - P2P 22556
