@@ -154,7 +154,7 @@ class FrameworkInfo(object):
 class ApplicationBundleInfo(object):
     def __init__(self, path):
         self.path = path
-        appName = "Dogecoin-Qt"
+        appName = "RGNCoin-Qt"
         self.binaryPath = os.path.join(path, "Contents", "MacOS", appName)
         if not os.path.exists(self.binaryPath):
             raise RuntimeError("Could not find bundle binary for " + path)
@@ -542,17 +542,21 @@ if len(config.fancy) == 1:
         sys.exit(1)
     
     p = config.fancy[0]
-    if verbose >= 3:
-        print("Fancy: Loading \"%s\"..." % p)
+    #if verbose >= 3:
+    print("Fancy: Loading \"%s\"..." % p)
     if not os.path.exists(p):
         if verbose >= 1:
             sys.stderr.write("Error: Could not find fancy disk image plist at \"%s\"\n" % (p))
         sys.exit(1)
     
     try:
-        fancy = plistlib.readPlist(p)
-    except:
+        currentDirectory = os.getcwd()
+        print(currentDirectory)
+        with open(p, 'rb') as fp:
+            fancy = plistlib.load(fp)
+    except Exception as e:
         if verbose >= 1:
+            print(e)
             sys.stderr.write("Error: Could not parse fancy disk image plist at \"%s\"\n" % (p))
         sys.exit(1)
     
@@ -602,7 +606,7 @@ else:
 
 # ------------------------------------------------
 
-target = os.path.join("dist", "Dogecoin-Qt.app")
+target = os.path.join("dist", "RGNCoin-Qt.app")
 
 if verbose >= 2:
     print("+ Copying source bundle +")

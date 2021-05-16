@@ -1,8 +1,8 @@
-Source: dogecoin
+Source: recallgavinnewsomcoin
 Section: utils
 Priority: optional
-Maintainer: Matt Corallo <matt@mattcorallo.com>
-Uploaders: Matt Corallo <matt@mattcorallo.com>
+Maintainer: Recall Gavin <recall@recallgavinnewsomcoin.com>
+Uploaders: Recall Gavin <recall@recallgavinnewsomcoin.com>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,9 +26,9 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: http://www.dogecoin.com/
-Vcs-Git: git://github.com/dogecoin/dogecoin.git
-Vcs-Browser: http://github.com/dogecoin/dogecoin
+Homepage: http://www.recallgavinnewsomcoin.com/
+Vcs-Git: git://github.com/recallgavinnewsomcoin/recallgavinnewsomcoin.git
+Vcs-Browser: http://github.com/recallgavinnewsomcoin/recallgavinnewsomcoin
 
 Package: dogecoind
 Architecture: any
@@ -46,7 +46,7 @@ Description: peer-to-peer network based digital currency - daemon
  This package provides the daemon, dogecoind, and the CLI tool
  dogecoin-cli to interact with the daemon.
 
-Package: dogecoin-qt
+Package: rgncoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -56,7 +56,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Dogecoin-Qt, a GUI for Dogecoin based on Qt.
+ This package provides RGNCoin-Qt, a GUI for RGNCoin based on Qt.
 
 Package: dogecoin-tx
 Architecture: any

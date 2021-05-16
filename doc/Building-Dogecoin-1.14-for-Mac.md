@@ -1,16 +1,10 @@
-### Building dogecoin-qt 1.14 on modern macs. ###
+### Building rgncoin-qt 1.14 on modern macs. ###
 
 Note that this requires changes made by michilumin on the 1.14-dev branch as well as some changes to BDB.
 
 Tested on OSX 10.11 El Capitan and 10.13 High Sierra.
 
 **Paper wallet printing support seems to work fine through this method as well.**
-
-### Clone dogecoin locally, or check it out, etc. ###
-
-For this purpose, just indicating the 1.14-branding branch in my repo.
-
-	$git clone -b 1.14-branding --single-branch https://github.com/michilumin/dogecoin.git
 
 ### Set up OSX basic build dependencies. ##
 
@@ -97,7 +91,7 @@ Go have another beverage.
 
 Run it.
 
-	$/usr/local/bin/dogecoin-qt
+	$/usr/local/bin/rgncoin-qt
 
 
 

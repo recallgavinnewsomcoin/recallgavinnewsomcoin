@@ -1,16 +1,14 @@
-# Dogecoin Core [DOGE, Ð]
+# RGNCoin Core [RGNC]
 
-![Dogecoin](https://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
+![RecallGavinNewsomCoin](./share/pixmaps/bitcoin256.png)
 
-[![Build Status](https://travis-ci.com/dogecoin/dogecoin.svg?branch=master)](https://travis-ci.com/dogecoin/dogecoin)
-
-Dogecoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as
+RecallGavinNewsomCoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as
 its proof of work (POW). Taking development cues from Tenebrix and Litecoin,
-Dogecoin currently employs a simplified variant of scrypt.
-- **Website:** [dogecoin.com.](https://dogecoin.com)
+RGNCoin currently employs a simplified variant of scrypt.
+- **Website:** [recallgavinnewsomcoin.com.](https://recallgavinnewsomcoin.com)
 
 ## License – Much license ⚖️
-Dogecoin Core is released under the terms of the MIT license. See
+RGNCoin Core is released under the terms of the MIT license. See
 [COPYING](COPYING) for more information or see
 [opensource.org](https://opensource.org/licenses/MIT)
 
@@ -52,7 +50,7 @@ not straightforward.
 
 ## Very Much Frequently Asked Questions ❓
 
-### How much doge can exist? – So many puppies! 🐕
+### How much RGNC can exist?
 Early 2015 (approximately a year and a half after release) there will be
 approximately 100,000,000,000 coins.
 Each subsequent block will grant 10,000 coins to encourage miners to continue to
@@ -60,13 +58,13 @@ secure the network and make up for lost wallets on hard drives/phones/lost
 encryption passwords/etc.
 
 
-### Such mining information ⛏
+### Mining information ⛏
 
-Dogecoin uses a simplified variant of the scrypt key derivation function as its
+RGNCoin uses a simplified variant of the scrypt key derivation function as its
 proof of work with a target time of one minute per block and difficulty
 readjustment after every block. The block rewards are fixed and halve every
 100,000 blocks. Starting with the 600,000th block, a permanent reward of
-10,000 Dogecoin per block will be issued.  
+10,000 RGNCoin per block will be issued.  
 
 Originally, a different payout scheme was envisioned with block rewards being
 determined by taking the maximum reward as per the block schedule and applying
@@ -81,41 +79,41 @@ lessen the impact of sudden increases and decreases of network hashing rate.
 
 **The current block reward schedule:**
 
-1–99,999: 0–1,000,000 Dogecoin
+1–99,999: 0–1,000,000 RGNCoin
 
-100,000–144,999: 0–500,000 Dogecoin
+100,000–144,999: 0–500,000 RGNCoin
 
-145,000–199,999: 250,000 Dogecoin
+145,000–199,999: 250,000 RGNCoin
 
-200,000–299,999: 125,000 Dogecoin
+200,000–299,999: 125,000 RGNCoin
 
-300,000–399,999: 62,500 Dogecoin
+300,000–399,999: 62,500 RGNCoin
 
-400,000–499,999: 31,250 Dogecoin
+400,000–499,999: 31,250 RGNCoin
 
-500,000–599,999: 15,625 Dogecoin
+500,000–599,999: 15,625 RGNCoin
 
-600,000+: 10,000 Dogecoin
+600,000+: 10,000 RGNCoin
 
 **The original block reward schedule, with one-minute block targets and four-hour difficulty readjustment:**
 
-1–99,999: 0–1,000,000 Dogecoin
+1–99,999: 0–1,000,000 RGNCoin
 
-100,000–199,999: 0–500,000 Dogecoin
+100,000–199,999: 0–500,000 RGNCoin
 
-200,000–299,999: 0–250,000 Dogecoin
+200,000–299,999: 0–250,000 RGNCoin
 
-300,000–399,999: 0–125,000 Dogecoin
+300,000–399,999: 0–125,000 RGNCoin
 
-400,000–499,999: 0–62,500 Dogecoin
+400,000–499,999: 0–62,500 RGNCoin
 
-500,000–599,999: 0–31,250 Dogecoin
+500,000–599,999: 0–31,250 RGNCoin
 
-600,000+: 10,000 Dogecoin
+600,000+: 10,000 RGNCoin
 
-### Wow plz make dogecoind/dogecoin-cli/dogecoin-qt
+### make rgncoind/rgncoin-cli/rgncoin-qt
 
-  The following are developer notes on how to build Dogecoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+  The following are developer notes on how to build RGNCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
   - [OSX Build Notes](doc/build-osx.md)
   - [Unix Build Notes](doc/build-unix.md)
@@ -146,7 +144,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the `-testnet` option to run with "play dogecoins" on the test network, if you
+Run with the `-testnet` option to run with "play rgncoins" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the `-regtest` option.
@@ -155,7 +153,7 @@ that run in `-regtest` mode.
 
 **DEBUG_LOCKORDER**
 
-Dogecoin Core is a multithreaded application, and deadlocks or other multithreading bugs
+RGNCoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with `-DDEBUG_LOCKORDER` (`configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g"`) inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.

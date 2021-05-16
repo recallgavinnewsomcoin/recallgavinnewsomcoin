@@ -7,15 +7,15 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2021)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core and Dogecoin Core]])
-AC_INIT([Dogecoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/dogecoin/dogecoin/issues],[dogecoin],[https://dogecoin.com/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core,Dogecoin Core,RGNCoin Core]])
+AC_INIT([RGNCoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/recallgavinnewsomcoin/recallgavinnewsomcoin/issues],[rgncoin],[https://recallgavinnewsomcoin.com/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 BITCOIN_DAEMON_NAME=dogecoind
-BITCOIN_GUI_NAME=dogecoin-qt
+BITCOIN_GUI_NAME=rgncoin-qt
 BITCOIN_CLI_NAME=dogecoin-cli
 BITCOIN_TX_NAME=dogecoin-tx
 
