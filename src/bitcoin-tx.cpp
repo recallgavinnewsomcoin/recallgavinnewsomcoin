@@ -56,8 +56,8 @@ static int AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = strprintf(_("%s dogecoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  dogecoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded dogecoin transaction") + "\n" +
-              "  dogecoin-tx [options] -create [commands]   " + _("Create hex-encoded dogecoin transaction") + "\n" +
+              "  rgncoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded rgncoin transaction") + "\n" +
+              "  rgncoin-tx [options] -create [commands]   " + _("Create hex-encoded rgncoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

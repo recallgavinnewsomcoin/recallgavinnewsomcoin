@@ -14,10 +14,10 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=dogecoind
+BITCOIN_DAEMON_NAME=rgncoind
 BITCOIN_GUI_NAME=rgncoin-qt
-BITCOIN_CLI_NAME=dogecoin-cli
-BITCOIN_TX_NAME=dogecoin-tx
+BITCOIN_CLI_NAME=rgncoin-cli
+BITCOIN_TX_NAME=rgncoin-tx
 
 AC_CANONICAL_HOST
 
@@ -916,11 +916,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build dogecoind])
+AC_MSG_CHECKING([whether to build rgncoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (dogecoin-cli dogecoin-tx)])
+AC_MSG_CHECKING([whether to build utils (rgncoin-cli rgncoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 

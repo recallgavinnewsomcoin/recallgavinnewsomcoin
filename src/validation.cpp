@@ -51,7 +51,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Dogecoin cannot be compiled without assertions."
+# error "RGNCoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -98,7 +98,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Dogecoin Signed Message:\n";
+const std::string strMessageMagic = "RGNCoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1702,7 +1702,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("dogecoin-scriptch");
+    RenameThread("rgncoin-scriptch");
     scriptcheckqueue.Thread();
 }
 

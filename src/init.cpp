@@ -193,7 +193,7 @@ void Shutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("dogecoin-shutoff");
+    RenameThread("rgncoin-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -614,7 +614,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("dogecoin-loadblk");
+    RenameThread("rgncoin-loadblk");
 
     {
     CImportingNow imp;
@@ -792,7 +792,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Dogecoin version %s\n", FormatFullVersion());
+    LogPrintf("RGNCoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only
