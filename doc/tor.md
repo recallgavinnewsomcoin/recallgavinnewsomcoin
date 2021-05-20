@@ -42,11 +42,11 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/dogecoin-service/
-	HiddenServicePort 22556 127.0.0.1:22556
-	HiddenServicePort 44556 127.0.0.1:44556
+	HiddenServicePort 23665 127.0.0.1:23665
+	HiddenServicePort 43665 127.0.0.1:43665
 
 The directory can be different of course, but (both) port numbers should be equal to
-your dogecoind's P2P listen port (22556 by default).
+your dogecoind's P2P listen port (23665 by default).
 
 	-externalip=X   You can tell Dogecoin about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -81,7 +81,7 @@ as well, use `discover` instead:
 
 	./dogecoind ... -discover
 
-and open port 22556 on your firewall (or use -upnp).
+and open port 23665 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

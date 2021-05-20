@@ -121,8 +121,8 @@ lessen the impact of sudden increases and decreases of network hashing rate.
 
 ### ports
 
-- RPC 22555
-- P2P 22556
+- RPC 23664
+- P2P 23665
 
 ## Development tips and tricks
 
